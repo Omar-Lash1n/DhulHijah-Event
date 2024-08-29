@@ -1,0 +1,69 @@
+.mainsite{
+    background-color: #384e96;
+    justify-content: center;
+    overflow: hidden;
+}
+.img-text{
+    text-align: center;
+    margin: 0vh 45vh 0vh 45vh;
+}
+.img-text h1{
+    font-family: 'Marko One';
+    font-size: 90px;
+    margin: 0%;   
+    color: #e0e0d6;
+}
+.img-text p{
+    font-family: 'Open Sans';
+    color: #e0e0d6;
+    font-size: x-small;
+    margin: 0%;
+}
+
+.img-text button{   
+border-color: #e0e0d6; 
+background-color: #384e96;
+color: #e0e0d6;
+ font-size: medium;
+ width: 150px;
+ height: 40px;
+ 
+}
+ 
+.boxes{
+justify-content: center;
+}
+
+.box{
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box p{
+    color: #090808f9; 
+    font-size: small; 
+margin-top: 20px;
+}
+
+.box h2{
+font-family: 'Marko One';
+font-size: 30px;
+color: rgb(46, 46, 140);
+text-align: center;
+}
+
+
+
+.box h3{
+    font-family: 'Marko One';
+    font-size: 30px;
+    color: rgb(46, 46, 140);
+    }
+
+    .box h4{
+        font-family: 'Marko One';
+        font-size: 30px;
+        color: rgb(46, 46, 140);
+        }
+    
