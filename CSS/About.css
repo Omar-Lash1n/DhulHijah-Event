@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+  /* Slider */
+  .slider {
+    background-color: #4054ac;
+    margin: 5vh 0vh 5vh 0vh;
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  .slide {
+    margin: 2vh;
+    background-color: #e8e4d4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2vh;
+  }
+ 
+  .slide h1 {
+    font-family: 'Marko One';
+    color: #040c34;
+  }
+ 
+  .slider p {
+    font-family: 'Open Sans';
+    color: #595959;
+  }
+ 
+  /* Main */
+  /*container*/
+ 
+  /*The first half of the main page*/
+   .page{
+     display: flex;
+     border: hidden 2px red;
+    margin: 15vh;
+    padding: 0px;
+   }
+ 
+  /*paragraghs font color*/
+   .page p{
+     color: #595959;
+   }
+   /*boxcontains heading, paragraph, and the button*/
+   .artbox{
+     display: flex;
+     border: hidden 2px black;
+     flex-direction: column;
+     margin: 20px;
+     padding: 40px 0px 40px 0px;
+     float: left;
+   }
+ 
+ /*Heading*/
+  .artbox h1{
+     border:2px hidden hotpink  ; 
+     width: 700px ;
+     font-family: 'Marko One';
+     font-size: 70px;
+     margin: 0px 20px 0px 20px;
+     color: #3853a8;
+     float: left;
+   }
+  /*Paragraph*/
+ .p2{
+   border: 2px hidden grey ;
+   width: 430px;
+     font-size: 15px;
+     margin: 0px;
+     font-weight: 900;
+     font-family: 'Open Sans';
+     color: #060f30;
+     margin: 0px 20px 0px 20px;
+   }
+  
+  /*Button*/
+   .button button{
+     float: left;
+     border: 2px hidden red;
+     padding: 8px 50px;
+     margin: 75px 20px 0px 20px; 
+     color:#f0f0f0;
+     background-color:#333;
+     width: 250px;
+     height: 40px;
+ }
+ /*The image*/
+  .image{
+     border: hidden 2px black;
+     margin: 0px;
+     padding: 70px 0 0 0;
+     justify-content: center;
+ 
+   }
+   .image img{
+     width: 450px;
+     height: 480px;
+   }
+ 
+ 
+ 
+ /*The second half of the main page*/
+ .page2{
+  
+   border: hidden 2px red;
+   margin-top: 100px;
+ }
+  
+ /*Heading*/
+ .page2 h1{
+   border: hidden 2px black;
+   text-align: center;
+   font-family: 'Marko One';
+   font-size: 70px;
+   margin: 10px 20px 10px 20px;
+   color: #3853a8;
+ }
+ 
+ /*Border contains the four boxes*/
+ .big-box{
+   border: hidden 2px black; 
+   display: flex;
+   flex-direction: row;
+   margin:0px;
+   padding:2vh 15vh 0vh 20vh ;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ /*The style of the box*/
+ .about-box {
+   margin: 0vh 5vh 7vh 0vh;
+   font-family: 'Cairo';
+   padding: 1vh;
+   display: flex;
+   height: 120px;
+   position: relative;
+   width: 430px;
+   
+ }
+ /*corner border*/
+ .top-border,
+ .bottom-border{
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 25%;
+ }
+ .top-border {
+   top: 0;
+ }
+ .bottom-border {
+   bottom: 0;
+ }
+ .top-border:after ,
+ .top-border:before,
+ .bottom-border:after,
+ .bottom-border:before {
+   content: '';
+  width: 100%;
+   height: 100%;
+ }
+ .top-border:after,
+ .top-border:before {
+   border-top: 4px solid #3853a8;
+ }
+ .bottom-border:after,
+ .bottom-border:before {
+   border-bottom: 4px solid #3853a8;
+ }
+ .top-border:before,
+ .bottom-border:before {
+   border-left: 4px solid #3853a8;
+ }
+ .top-border:after,
+ .bottom-border:after {
+   border-right: 4px solid #3853a8;
+ }
+ 
+ /*Icon*/
+ .icons{
+   border: hidden 2px green;
+   margin:0px ;
+   padding: 20px;
+    width: 110px;
+    height: 110px;
+  }
+ 
+ /*Border contains the title and the paragragh*/
+   .text{
+     margin: 0px;
+     font-family: 'Cairo';
+     border: hidden 2px green;
+     padding: 10px;
+     width: 300px;
+   }
+   /*Title*/
+    .text h3{
+   font-family: 'Marko One';
+   color:#1e1828;
+   font-size: 25px;
+   padding: 0px;
+   margin: 0;
+   font-weight: 900;
+   }
+ /*paragraph*/
+   .text p{
+     font-family: 'Open Sans';
+     font-size: x-small;
+  padding: 0px;
+     margin: 0;
+     width: auto;
+ }
+  
+ /*footer*/
+ .p3{
+   border:hiiden 2px black;
+   width: 400px;
+   margin: 5px 700px 0px 570px ;
+   text-align: center;
+   font-family: 'Open Sans';
+   font-size: x-small;
+ }
+ 
+ 
+ /*Responsive*/
+ @media (max-width: 500px) {
+   body { zoom: 0.4; }
+ }
+ @media (max-width: 550px) {
+   body{ zoom: 0.5; }
+ }
+ /*small screens*/
+ @media(max-width:767px){
+ .page{
+   margin: 0;
+   width: 100px;
+ 
+   flex-wrap: wrap;
+   justify-content: center;
+ }}
+ 
+ /*Medium screens*/
+ @media(min-width:768px){
+ 
+ }
+ /*Large screens*/
+ @media(min-width:1200px){
+ 
+ }
