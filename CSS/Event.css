@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+#body{
+   padding-bottom: 6vh;
+}
+#headers{
+   font-size:25px ;
+   font-family: 'Marko One';
+}
+#para{
+   font-size: 20px;
+   font-family: 'Open Sans, cairo';
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    border: 3px solid #3853a8;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.container h2::before {
+    content: "";
+    display: block;
+    border-top: 3px solid #3853a8;
+    height: 10px;
+    width: 60px;
+    margin-left: 5px;
+}
+
+
+.para{
+   display: flex;
+}
+.para1, .para2, .para3 {
+   padding: 0 20px;
+}
+
+button {
+    padding: 10px 55px;
+    background-color: #010021;
+    color: #e8e4d4;
+    margin:0 10px ;
+    font-size: 15px;
+}
+button:hover{
+   cursor: pointer;
+   background-color: #e8e4d4;
+   background-color: #1a2a5c;
+   border: hidden;
+   
+}
+.buttons{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 20px;
+}
+.moonstar{
+   width: 120px;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   background-color: #e8e4d4;
+   padding: 10px 40px;
+}
+
+.container1{
+   display: flex;
+   margin: 150px 0 0 0;
+}
+.tips-p{
+   border: 2px solid hidden ; 
+   padding-right: 20vh;
+}
+.tips-p h1{
+   color: #3853a8;
+   font-size: 50px;
+   font-family: 'Marko One';
+}
+
+.num{
+   font-size: 50px;
+   color: #3853a8;
+   font-family: 'Marko One';
+}
+hr{
+   border:none ;
+   height: 3px;
+   background-color: #3853a8;
+}
+.point1{
+   border: 3px solid #3853a8;
+   padding: 0 30px;
+   text-align-last: center;
+}
+
+.point2{
+   border: 3px solid #3853a8;
+   padding: 0 30px;
+   text-align-last: center;
+   margin-right: 20px;
+
+  /* bold corners */
+  background:
+       linear-gradient(to right, #3853a8 6px, transparent 6px) 0 0,
+       linear-gradient(to right, #3853a8 6px, transparent 6px) 0% 100%,
+       linear-gradient(to left, #3853a8 6px, transparent 6px) 100% 0,
+       linear-gradient(to left, #3853a8 6px, transparent 6px) 100% 100%,
+       linear-gradient(to bottom, #3853a8 6px, transparent 6px) 0 0,
+       linear-gradient(to bottom, #3853a8 6px, transparent 6px) 100% 0,
+       linear-gradient(to top, #3853a8 6px, transparent 6px) 0 101%,
+       linear-gradient(to top, #3853a8 6px, transparent 8px) 100% 101%;
+   background-repeat: no-repeat;
+   background-size: 60px 60px;
+
+}
+
+.point3{
+   border: 3px solid #3853a8;
+   padding: 0 30px;
+   text-align-last: center;
+}
+.container2{
+   display: flex;
+}
+
+/* responsive */
+@media (max-width:800px) 
+{
+   .container1, .container2 , .para{
+       display: block;
+   }
+   .tips-p{
+   padding: 0;
+   }  
+   #headers{
+       font-size: 50px;
+   }
+   #tips{
+       font-size: 70px;
+   }
+   #para{
+       font-size: 40px;
+   }
+
+   .buttons button{
+       margin: 0 0 10px 0;
+       padding: 15px 66px;
+       font-size: 30px;
+   }
+   .buttons{
+       padding: 20px;
+   }
+
+   .container h2::before {
+       content: "";
+       display: block;
+       border-top: 3px solid #3853a8;
+       height: 10px;
+       width: 16vh;
+       margin-left: 5px;
+   }
+}
+
+   /* zoom */
+@media (max-width: 800px) {
+    body {
+        zoom: 0.7;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        zoom: 0.5;
+    }
+}
